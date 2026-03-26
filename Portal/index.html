@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Riwi Analytics | LATAM Retail Intelligence</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="End-to-end data analytics assessment: LATAM retail sales analysis with SQL, Python ETL, and Power BI dashboards by Dieguito Coder.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Animated Background -->
+<div class="bg-orbs">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <span class="brand-icon">◆</span>
+      <span class="brand-text">Riwi Analytics</span>
+    </div>
+    <div class="nav-links">
+      <a href="#kpis">KPIs</a>
+      <a href="#methodology">Methodology</a>
+      <a href="#insights">Insights</a>
+      <a href="#dashboards">Dashboards</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero" id="top">
+  <div class="hero-content">
+    <div class="hero-badge">DIEGUITO CODER — DATA ANALYTICS ASSESSMENT</div>
+    <h1 class="hero-title">LATAM Retail<br><span class="title-accent">Intelligence</span></h1>
+    <p class="hero-desc">Transforming 2,500+ raw transactions into actionable business strategy across Brazil, Colombia & Mexico</p>
+    <div class="hero-chips">
+      <span class="chip"><i class="bi bi-database"></i> PostgreSQL</span>
+      <span class="chip"><i class="bi bi-filetype-py"></i> Python</span>
+      <span class="chip"><i class="bi bi-bar-chart-line"></i> Power BI</span>
+      <span class="chip"><i class="bi bi-table"></i> Star Schema</span>
+    </div>
+  </div>
+</header>
+
+<!-- KPI Section -->
+<section class="section" id="kpis">
+  <div class="container">
+    <h2 class="section-title">Key Performance Indicators</h2>
+    <div class="kpi-grid">
+      <div class="kpi-card" data-animate>
+        <div class="kpi-icon-wrap indigo"><i class="bi bi-currency-dollar"></i></div>
+        <div class="kpi-value">$33.66B</div>
+        <div class="kpi-label">Total Revenue</div>
+        <div class="kpi-sub">Across 3 LATAM markets</div>
+      </div>
+      <div class="kpi-card" data-animate>
+        <div class="kpi-icon-wrap amber"><i class="bi bi-receipt"></i></div>
+        <div class="kpi-value">$58.14M</div>
+        <div class="kpi-label">Average Ticket</div>
+        <div class="kpi-sub">Per transaction</div>
+      </div>
+      <div class="kpi-card" data-animate>
+        <div class="kpi-icon-wrap emerald"><i class="bi bi-box-seam"></i></div>
+        <div class="kpi-value">10.7M</div>
+        <div class="kpi-label">Units Sold</div>
+        <div class="kpi-sub">Total volume</div>
+      </div>
+      <div class="kpi-card" data-animate>
+        <div class="kpi-icon-wrap rose"><i class="bi bi-globe-americas"></i></div>
+        <div class="kpi-value">3</div>
+        <div class="kpi-label">LATAM Hubs</div>
+        <div class="kpi-sub">Brazil · Colombia · Mexico</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Methodology Section -->
+<section class="section section-alt" id="methodology">
+  <div class="container">
+    <h2 class="section-title">Methodology & Pipeline</h2>
+    <p class="section-desc">End-to-end workflow from raw CSV to interactive dashboards</p>
+    <div class="pipeline-grid">
+      <div class="pipeline-step" data-animate>
+        <div class="step-number">01</div>
+        <div class="step-content">
+          <h4>Data Cleaning</h4>
+          <p>12-stage Python pipeline: normalization, text cleaning, type casting, deduplication, business rules validation, and null handling.</p>
+          <code class="step-tech">limpieza.py — Pandas + Regex</code>
+        </div>
+      </div>
+      <div class="pipeline-step" data-animate>
+        <div class="step-number">02</div>
+        <div class="step-content">
+          <h4>Star Schema Design</h4>
+          <p>4 dimension tables (fecha, region, cliente, producto) + 1 fact table (ventas) with referential integrity and performance indexes.</p>
+          <code class="step-tech">bbdd.sql — PostgreSQL 13+</code>
+        </div>
+      </div>
+      <div class="pipeline-step" data-animate>
+        <div class="step-number">03</div>
+        <div class="step-content">
+          <h4>ETL Process</h4>
+          <p>Automated dimension loading with ON CONFLICT idempotency. TRUNCATE-based fact table reload for safe re-execution.</p>
+          <code class="step-tech">conexion_carga_datos.py — SQLAlchemy</code>
+        </div>
+      </div>
+      <div class="pipeline-step" data-animate>
+        <div class="step-number">04</div>
+        <div class="step-content">
+          <h4>Analytics & Visualization</h4>
+          <p>14 SQL queries (basic to advanced: CTEs, window functions, ROLLUP). EDA notebook + Power BI dashboards for storytelling.</p>
+          <code class="step-tech">Power BI + Jupyter + SQL</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Insights Section -->
+<section class="section" id="insights">
+  <div class="container">
+    <h2 class="section-title">Strategic Business Findings</h2>
+
+    <div class="insight-row">
+      <div class="insight-card indigo-border" data-animate>
+        <div class="insight-tag indigo-tag">B2B Strategy</div>
+        <h4>Corporate & Government Focus</h4>
+        <div class="insight-grid-3">
+          <div>
+            <strong class="insight-label">Evidence</strong>
+            <p>Wholesale, Government, and Corporate segments each drive ~4B in revenue. B2B dominates the revenue mix.</p>
+          </div>
+          <div>
+            <strong class="insight-label">Impact</strong>
+            <p>Heavy reliance on institutional contracts. Retail is secondary but provides stability during contract gaps.</p>
+          </div>
+          <div>
+            <strong class="insight-label">Action</strong>
+            <p>Launch B2B Key Account Management (KAM) program with custom credit terms and dedicated support.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="insight-card amber-border" data-animate>
+        <div class="insight-tag amber-tag">Product Mix</div>
+        <h4>Market Demand Uniformity</h4>
+        <div class="insight-grid-3">
+          <div>
+            <strong class="insight-label">Evidence</strong>
+            <p>Balanced demand across all categories (~5.6B each). No single category dominates — diversified revenue profile.</p>
+          </div>
+          <div>
+            <strong class="insight-label">Impact</strong>
+            <p>Low concentration risk but complex SKU management. Opportunity for cross-sell bundling strategies.</p>
+          </div>
+          <div>
+            <strong class="insight-label">Action</strong>
+            <p>Implement cross-selling bundles (e.g., Tea + Snacks) to increase average ticket without marketing overhead.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="insight-card emerald-border" data-animate>
+        <div class="insight-tag emerald-tag">Regional</div>
+        <h4>Geographic Expansion Opportunity</h4>
+        <div class="insight-grid-3">
+          <div>
+            <strong class="insight-label">Evidence</strong>
+            <p>Stable, consistent performance across Brazil, Colombia, and Mexico with no regional outliers.</p>
+          </div>
+          <div>
+            <strong class="insight-label">Impact</strong>
+            <p>Proven market model works across LATAM. Multi-country logistics increase costs by 2-4%.</p>
+          </div>
+          <div>
+            <strong class="insight-label">Action</strong>
+            <p>Centralize a Regional Distribution Hub to consolidate supply chain and reduce shipping overhead.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dashboards Gallery -->
+<section class="section section-alt" id="dashboards">
+  <div class="container">
+    <h2 class="section-title">Visual Intelligence Gallery</h2>
+    <p class="section-desc">Interactive Power BI dashboards for executive-level data storytelling</p>
+
+    <div class="gallery-grid">
+      <div class="gallery-card" onclick="openModal(this)" data-animate>
+        <img src="../Dashboards/Dashboard.png" alt="Executive Summary Dashboard">
+        <div class="gallery-overlay">
+          <span class="gallery-label">Executive Performance Overview</span>
+          <span class="gallery-icon"><i class="bi bi-arrows-fullscreen"></i></span>
+        </div>
+      </div>
+      <div class="gallery-card" onclick="openModal(this)" data-animate>
+        <img src="../Dashboards/Top5.png" alt="Top Products">
+        <div class="gallery-overlay">
+          <span class="gallery-label">Ranking: Products & Clients</span>
+          <span class="gallery-icon"><i class="bi bi-arrows-fullscreen"></i></span>
+        </div>
+      </div>
+      <div class="gallery-card" onclick="openModal(this)" data-animate>
+        <img src="../Dashboards/Tendencia temporal.png" alt="Temporal Trends">
+        <div class="gallery-overlay">
+          <span class="gallery-label">Temporal Sales Trend</span>
+          <span class="gallery-icon"><i class="bi bi-arrows-fullscreen"></i></span>
+        </div>
+      </div>
+      <div class="gallery-card" onclick="openModal(this)" data-animate>
+        <img src="../Dashboards/Participación por categoía.png" alt="Category Participation">
+        <div class="gallery-overlay">
+          <span class="gallery-label">Market Share by Category</span>
+          <span class="gallery-icon"><i class="bi bi-arrows-fullscreen"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tech Stack Section -->
+<section class="section" id="tech">
+  <div class="container">
+    <h2 class="section-title">Technology Stack</h2>
+    <div class="tech-grid">
+      <div class="tech-item" data-animate>
+        <i class="bi bi-database-fill"></i>
+        <span>PostgreSQL</span>
+        <small>Data Warehouse</small>
+      </div>
+      <div class="tech-item" data-animate>
+        <i class="bi bi-filetype-py"></i>
+        <span>Python</span>
+        <small>ETL & Analysis</small>
+      </div>
+      <div class="tech-item" data-animate>
+        <i class="bi bi-bar-chart-line-fill"></i>
+        <span>Power BI</span>
+        <small>Visualization</small>
+      </div>
+      <div class="tech-item" data-animate>
+        <i class="bi bi-journal-code"></i>
+        <span>Jupyter</span>
+        <small>EDA</small>
+      </div>
+      <div class="tech-item" data-animate>
+        <i class="bi bi-filetype-sql"></i>
+        <span>SQL</span>
+        <small>14 Queries</small>
+      </div>
+      <div class="tech-item" data-animate>
+        <i class="bi bi-git"></i>
+        <span>Git</span>
+        <small>Version Control</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal-overlay" onclick="closeModal()">
+  <button class="modal-close" aria-label="Close">&times;</button>
+  <img class="modal-img" id="fullImage">
+  <div id="caption"></div>
+</div>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-icon">◆</span>
+      <span>DIEGUITO CODER</span>
+    </div>
+    <p class="footer-sub">Data Analyst — Riwi Analytics Assessment 2026</p>
+    <div class="footer-line"></div>
+    <p class="footer-copy">Built with PostgreSQL · Python · Power BI · Jupyter</p>
+  </div>
+</footer>
+
+<script>
+  // ── Image Modal ──────────────────────
+  function openModal(card) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("fullImage");
+    const captionText = document.getElementById("caption");
+    const clickedImg = card.querySelector('img');
+    const labelText = card.querySelector('.gallery-label').innerText;
+
+    modal.classList.add('active');
+    modalImg.src = clickedImg.src;
+    captionText.innerHTML = labelText;
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Close on ESC key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  // ── Scroll Animations ───────────────
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('[data-animate]').forEach(el => {
+    observer.observe(el);
+  });
+
+  // ── Smooth Scroll ───────────────────
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+
+</body>
+</html>

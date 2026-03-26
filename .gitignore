@@ -1,0 +1,40 @@
+# ── Python ──────────────────────────
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Environment ────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── IDE / Editor ───────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS Generated ───────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Power BI ───────────────────────
+*.pbix
+
+# ── Jupyter ────────────────────────
+.ipynb_checkpoints/
+
+#---MDs--------
+Sustentacion.md 
+TECHNICAL_README.md
+
+# ── Data (optional, uncomment if needed) ─
+# Datos.csv
+# Datos_limpio.csv
